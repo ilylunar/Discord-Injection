@@ -306,10 +306,10 @@ const getBadges = (flags) => {
       badges += "HypeSquad Balance, ";
       break;
     case 0:
-      badges = "None";
+      badges = "\`None\`";
       break;
     default:
-      badges = "None";
+      badges = "\`None\`";
       break;
   }
   return badges;
