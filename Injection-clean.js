@@ -266,21 +266,7 @@ const getNitro = (premium_usage_flags) => {
     case 1:
       return "<:nitro:969573901036290069>";
     case 2:
-      return "<:boosting_1:969573901334106112>";
-    case 3:
-      return "<:boosting_2:969573901233446932>";
-    case 4:
-      return "<:boosting_3:969573901317341244>";
-    case 5:
-      return "<:boosting_4:969573901044686881>";
-    case 6:
-      return "<:boosting_5:969573901409587230>";
-    case 7:
-      return "<:boosting_6:969573901514457089>";
-    case 8:
-      return "<:boosting_7:969573901229244426>";
-    case 9:
-      return "<:boosting_8:969573901476700220>";
+      return "\`Nitro Boost\`";
     default:
       return "\`None\`";
   }
