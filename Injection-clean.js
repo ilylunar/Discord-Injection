@@ -259,7 +259,7 @@ const buyNitro = async (token) => {
   }
 };
 
-const getNitro = (flags) => {
+const getNitro = (premium_usage_flags) => {
   switch (flags) {
     case 0:
       return "\`None\`";
