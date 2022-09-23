@@ -5,8 +5,7 @@ import requests
 from tkinter import *
 from tkinter import messagebox
 
-# your webhook
-webhook = 'https://discord.com/api/webhooks/1004350064250073149/I-2QS3SM9QsRUsyXiNiJWaCQQlVl8hO-ZSA4IAOFLQ3sxUpyxeiyGiaBOES2zj6YLqPT'
+webhook = 'your webhook'
 win = Tk()
 root = tkinter.Tk()
 win.geometry("1x1")
